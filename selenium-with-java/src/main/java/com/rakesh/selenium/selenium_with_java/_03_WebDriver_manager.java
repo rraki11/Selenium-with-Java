@@ -19,7 +19,7 @@ public class _03_WebDriver_manager {
 		/*
 		 * If you're working in a network environment with proxy restrictions (like in some companies),
 		 * you can configure the proxy as shown below:
-		 * WebDriverManager.chromedriver().proxy("your-proxy-host:port").setup();
+		 * "WebDriverManager.chromedriver().proxy("your-proxy-host:port").setup();"
 		 */
 
 		// Launch a new Chrome browser instance
