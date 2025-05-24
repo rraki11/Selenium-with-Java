@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class WebDriver_manager3 {
+public class _03_WebDriver_manager {
 
 	public static void main(String[] args) {
 
