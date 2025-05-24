@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 @SuppressWarnings("unused") //will suppress the warnings when we didn't used the resource
 
-public class Opening_a_browser {
+public class Opening_a_browser2 {
 
     public static void main(String[] args) {
         

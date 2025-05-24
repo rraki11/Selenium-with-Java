@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class FindingElements_usingLocators {
+public class FindingElements_usingLocators4 {
     public static void main(String[] args) throws InterruptedException {
 
         // InterruptedException is used when we use Thread.sleep(), 
