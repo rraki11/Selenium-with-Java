@@ -37,11 +37,11 @@ public class _04_FindingElements_usingLocators {
         highlight(driver, driver.findElement(By.partialLinkText("SeleniumTuto")));
         Thread.sleep(3000);
 
-        // Locate an element using class name (only one class should be passed if using className locator)
+        // Locate an element using class name (only one class should be passed if using className 		locator)
         highlight(driver, driver.findElement(By.className("date-header")));
         Thread.sleep(3000);
 
-        // Locate an element using tag name (note: multiple <h2> elements exist, only the first one will be 		highlighted)
+        // Locate an element using tag name (note: multiple <h2> elements exist, only the first one will 		be highlighted)
         highlight(driver, driver.findElement(By.tagName("h2")));
         Thread.sleep(3000);
 
