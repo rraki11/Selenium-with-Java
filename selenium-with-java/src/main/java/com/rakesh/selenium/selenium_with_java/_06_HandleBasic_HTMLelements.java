@@ -10,7 +10,7 @@ public class _06_HandleBasic_HTMLelements {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		//In this program we will be handling basic elements such as Radio Buttons, Buttons, Link texts, 		Check box 
+		//In this program we will be handling basic elements such as Radio Buttons, Buttons, Link texts, Check box 
 		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
@@ -42,7 +42,7 @@ public class _06_HandleBasic_HTMLelements {
 		
 		driver.findElement(By.id("prompt")).click(); //clicks on the prompt
 		Thread.sleep(1000);
-		driver.switchTo().alert().sendKeys("Hello Prompt"); //after clicking on the prompt text will be 		netered 
+		driver.switchTo().alert().sendKeys("Hello Prompt"); //after clicking on the prompt text will be netered 
 		driver.switchTo().alert().accept();
 		Thread.sleep(5000);
 		
