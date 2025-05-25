@@ -53,3 +53,6 @@ public class _06_HandleBasic_HTMLelements {
 	}
 
 }
+
+//we use element.isSelected for Radio buttons, Checkboxes and Dropdown options
+//we use element.isEnabled or element.isDisplayd for Buttons 
