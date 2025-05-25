@@ -26,7 +26,7 @@ public class _06_HandleBasic_HTMLelements {
 			driver.findElement(By.id("radio1")).click();
 			Thread.sleep(2000);
 		} else {
-			System.out.println("there is nothing to select..");
+			System.out.println("there is nothing to click..");
 		}
 		
 		WebElement orangechk = driver.findElement(By.id("checkbox1"));
