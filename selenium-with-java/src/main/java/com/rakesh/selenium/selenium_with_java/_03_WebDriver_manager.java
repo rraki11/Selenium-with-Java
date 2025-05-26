@@ -24,6 +24,9 @@ public class _03_WebDriver_manager {
 
 		// Launch a new Chrome browser instance
 		WebDriver driver = new ChromeDriver();
+		
+		//maximize the window
+		driver.manage().window().maximize();
 
 		// Open Google's homepage
 		driver.get("https://google.com/");

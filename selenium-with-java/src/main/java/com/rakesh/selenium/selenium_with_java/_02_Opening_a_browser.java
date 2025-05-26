@@ -9,11 +9,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class _02_Opening_a_browser {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         
     	//opening chrome browser
         // Create a new instance of ChromeDriver (opens Chrome browser)
         WebDriver driver = new ChromeDriver();
+        
+        //maximize the window
+        driver.manage().window().maximize();
         
         // Navigate to Google and print its title
         driver.get("https://google.com/");
@@ -42,7 +45,12 @@ public class _02_Opening_a_browser {
 
         //use ChromeDriver with brave's binary
         WebDriver driver2 = new ChromeDriver(options);
+        
+        //maximize window
+        driver.manage().window().maximize();
+        
         driver2.get("https://google.com/");
+        Thread.sleep(3000);
         System.out.println("Brave Opened: " + driver2.getTitle());
         
         //closing the browser session
