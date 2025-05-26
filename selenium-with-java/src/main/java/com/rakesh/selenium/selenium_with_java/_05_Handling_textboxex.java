@@ -56,9 +56,15 @@ public class _05_Handling_textboxex {
 				//store the entered password value in the "passvalue" variable and prints it on consol
 				String passValue = passwordElement.getAttribute("value");
 				System.out.println("entered password: " + passValue);
+				Thread.sleep(3000);
+				
+				//clicks on the login button..
+				WebElement loginElement = driver.findElement(By.name("login"));
+				loginElement.click(); //clicks on the LOGIN button
 				
 				//sleeps for 3sec = 3000ms
-				Thread.sleep(3000);
+				Thread.sleep(5000);
+				driver.quit();
 			} else {
 				System.out.println("element for entering password is not enabled!");
 			}
