@@ -54,5 +54,12 @@ public class _06_HandleBasic_HTMLelements {
 
 }
 
-//we use "element.isSelected" for Radio buttons, Checkboxes and Dropdown options
-//we use "element.isEnabled" or "element.isDisplayd" for Buttons 
+//We use "element.isSelected()" for Radio Buttons and Checkboxes 
+//-> It checks whether the element is currently selected (true/false).
+//-> Not applicable to buttons or text fields.
+
+//We use "element.isEnabled()" to check if an element (like a button, input box, etc.) is interactable
+//-> If it returns false, the element is disabled (e.g., grayed out).
+
+//We use "element.isDisplayed()" to verify if the element is visible on the webpage
+//-> Useful to check whether an element is present and viewable in the current DOM.
