@@ -61,9 +61,12 @@ public class _05_Handling_textboxex {
 				//clicks on the login button..
 				WebElement loginElement = driver.findElement(By.name("login"));
 				loginElement.click(); //clicks on the LOGIN button
+				System.out.println("login button pressed");
 				
 				//sleeps for 3sec = 3000ms
 				Thread.sleep(5000);
+				
+				System.out.println("browser is about to close");
 				driver.quit();
 			} else {
 				System.out.println("element for entering password is not enabled!");
