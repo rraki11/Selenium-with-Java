@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 
-public class _07_Handling_dropdownelements {
+public class _07_Handling_SingledropdownEle {
 
 	public static void main(String[] args) throws InterruptedException {
 
