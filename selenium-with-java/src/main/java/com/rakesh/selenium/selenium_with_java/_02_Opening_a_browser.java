@@ -21,7 +21,7 @@ public class _02_Opening_a_browser {
         // Navigate to Google and print its title
         driver.get("https://google.com/");
         String google = driver.getTitle();
-        System.out.println("Opened: " + google);
+        System.out.println("Chrome Opened: " + google);
 
         // Navigate to your GitHub repository and print its title
         driver.get("https://github.com/rraki11/Selenium-with-Java");
@@ -47,7 +47,7 @@ public class _02_Opening_a_browser {
         WebDriver driver2 = new ChromeDriver(options);
         
         //maximize window
-        driver.manage().window().maximize();
+        driver2.manage().window().maximize();
         
         driver2.get("https://google.com/");
         Thread.sleep(3000);
