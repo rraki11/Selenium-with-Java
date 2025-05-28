@@ -1,6 +1,5 @@
 package com.rakesh.selenium.selenium_with_java;
 
-import java.lang.foreign.Linker.Option;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
