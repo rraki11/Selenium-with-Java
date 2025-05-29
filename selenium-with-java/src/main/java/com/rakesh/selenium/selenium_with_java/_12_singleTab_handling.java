@@ -1,7 +1,6 @@
 package com.rakesh.selenium.selenium_with_java;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.v134.css.model.CSSStyleSheetHeader;
 import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
