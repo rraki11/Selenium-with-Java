@@ -38,7 +38,7 @@ public class _10_Alerts_handling {
 		System.out.println(driver.findElement(By.id("output")).getText());
 		Thread.sleep(2000);
 		
-		// Handling promt box
+		// Handling prompt box
 		driver.findElement(By.id("promptBox")).click();
 		System.out.println(driver.switchTo().alert().getText());
 		Thread.sleep(3000);

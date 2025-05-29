@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class _11_Windows_handling {
+public class _11_singleWindow_handling {
 
 	public static void main(String[] args) throws InterruptedException {
 
