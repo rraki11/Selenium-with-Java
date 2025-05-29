@@ -12,6 +12,7 @@ public class _13_Frames_handling {
         // Setup ChromeDriver using WebDriverManager
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
         
         // Open the practice page for frames
         driver.get("https://www.hyrtutorials.com/p/frames-practice.html");
