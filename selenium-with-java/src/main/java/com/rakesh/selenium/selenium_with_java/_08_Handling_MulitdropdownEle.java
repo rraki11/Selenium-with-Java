@@ -31,6 +31,7 @@ public class _08_Handling_MulitdropdownEle {
 		
 //it dosent have any first option like it was in single drop down element
 //so, we cant use "Multidropdown.getFirstSelectedOptions().getText();" like we did with single dropdown element to print/get the first selected option
+		
 		//but we can print the first option like this
 		List<WebElement> selected = Multidropdown.getAllSelectedOptions();
 		if (!selected.isEmpty()) {

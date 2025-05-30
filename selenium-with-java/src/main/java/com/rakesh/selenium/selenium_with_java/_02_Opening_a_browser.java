@@ -42,7 +42,6 @@ public class _02_Opening_a_browser {
         //Now, Selenium uses ChromeDriver but because of the options.setBinary(bravePath) line, it launches Brave browser instead of Chrome.
         options.setBinary(bravePath);
 
-
         //use ChromeDriver with brave's binary
         WebDriver driver2 = new ChromeDriver(options);
         

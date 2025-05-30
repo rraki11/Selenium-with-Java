@@ -43,7 +43,7 @@ public class _10_Alerts_handling {
 		System.out.println(driver.switchTo().alert().getText());
 		Thread.sleep(3000);
 		driver.switchTo().alert().sendKeys("Hi, Im Shubh"); // enters the given prompt/text
-		driver.switchTo().alert().accept();
+		driver.switchTo().alert().accept(); // accept = to click OK
 		System.out.println(driver.findElement(By.id("output")).getText());
 		Thread.sleep(2000);
 
