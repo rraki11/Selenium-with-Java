@@ -16,6 +16,7 @@ public class _17_ImplicitWaitTimout {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 
+		// Once it is intialized it will mean for whole browser like, pageLoadTimeout did.
 		// Set an implicit wait timeout of 6 seconds
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
 
