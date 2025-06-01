@@ -9,6 +9,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+/*
+ * An Implicit Wait is a Selenium mechanism that tells the WebDriver to wait for a certain amount of    time when trying to find an element if it's not immediately available. 
+ * It applies globally — to every findElement() or findElements() call
+ */
+
 public class _17_ImplicitWaitTimout {
 
 	public static void main(String[] args) throws InterruptedException {
