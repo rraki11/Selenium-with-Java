@@ -30,7 +30,7 @@ public class _16_PageLoadTimeout {
 		// Open Google (usually loads fast, should not throw error)
 		driver.get("https://google.com/");
 
-		// If you try a slower site like YouTube or your own test server, it might timeout
+		// If you try a slower site like YouTube it might timeout
 		// driver.get("https://youtube.com/");
 
 		// End time after the page loads
