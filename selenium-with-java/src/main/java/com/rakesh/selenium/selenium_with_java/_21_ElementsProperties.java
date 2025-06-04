@@ -16,7 +16,6 @@ public class _21_ElementsProperties {
 		driver.get("https://www.facebook.com/");
 		
 		driver.findElement(By.id("email")).sendKeys("shubham@gmail.com");
-
 		driver.findElement(By.id("pass")).sendKeys("blhabladfkjolakdf");
 		
 		// Print the tag name of the email input field
