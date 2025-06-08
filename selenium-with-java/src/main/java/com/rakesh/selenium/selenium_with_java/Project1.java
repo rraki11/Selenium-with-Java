@@ -1,8 +1,8 @@
 package com.rakesh.selenium.selenium_with_java;
 
+import java.nio.Buffer;
 import java.util.Arrays;
 import java.util.Random;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -70,9 +70,20 @@ public class Project1 {
 			element17(driver);
 			Thread.sleep(2000);
 		Thread.sleep(100 + new Random().nextInt(150));
+			element18(driver);
+			Thread.sleep(2000);
+		Thread.sleep(100 + new Random().nextInt(150));
+		driver.get("https://www.facebook.com/");
+			element192021(driver);
+			Thread.sleep(2000);
+		Thread.sleep(100 + new Random().nextInt(150));
+		driver.get("https://www.youtube.com/");
+			element22232425(driver);
+			Thread.sleep(2000);
+		Thread.sleep(100 + new Random().nextInt(150));
+		driver.get("https://gemini.google.com/app");
+		element2627282930(driver);
 			
-			
-		
 		Thread.sleep(3000);
 		driver.quit();
 		
@@ -168,5 +179,48 @@ public class Project1 {
 		WebElement ele17 = d.findElement(By.xpath("//select[@id='searchDropdownBox']"));
 		ele17.click();
 		highlight(ele17, d);
+	}
+//---------------------------------------------------------------------------------------------------//
+	
+	public static void element18 (WebDriver d) throws InterruptedException {
+		WebElement ele18 = d.findElement(By.xpath("//button[@aria-label='Expand to Change Language or Country' and @tabindex=0]"));
+		ele18.click();
+		highlight(ele18, d);
+	}
+//---------------------------------------------------------------------------------------------------//
+	
+	public static void element192021 (WebDriver d) {
+		WebElement ele19 = d.findElement(By.id("email"));
+		highlight(ele19, d);
+		WebElement ele20 = d.findElement(By.id("passContainer"));
+		highlight(ele20, d);
+//		WebElement ele21 = d.findElement(By.id("u_0_5_So"));
+//		highlight(ele21, d);
+	}
+//---------------------------------------------------------------------------------------------------//
+	
+	public static void element22232425 (WebDriver d) {
+		WebElement ele22 = d.findElement(By.id("logo-icon"));
+		highlight(ele22, d);
+		WebElement ele23 = d.findElement(By.xpath("//input[@name='search_query']"));
+		highlight(ele23, d);
+		WebElement ele24 = d.findElement(By.xpath("//button[starts-with(@class,'ytSearchboxComponentSearchButton')]"));
+		highlight(ele24, d);
+		WebElement ele25 = d.findElement(By.xpath("//ytd-mini-guide-renderer"));
+		highlight(ele25, d);
+	}
+//---------------------------------------------------------------------------------------------------//
+	
+	public static void element2627282930 (WebDriver d) {
+		WebElement ele26 = d.findElement(By.xpath("//div[@data-test-id='logo']"));
+		highlight(ele26, d);
+		WebElement ele27 = d.findElement(By.xpath("//mat-icon[@role='img' and @fonticon='menu']"));
+		highlight(ele27, d);
+		WebElement ele28 = d.findElement(By.xpath("//mat-icon[@role='img' and @fonticon='add_2']"));
+		highlight(ele28, d);
+		WebElement ele29 = d.findElement(By.xpath("//div[@class='ql-editor ql-blank textarea new-input-ui' and @role='textbox']"));
+		highlight(ele29, d);
+		WebElement ele30 = d.findElement(By.xpath("//mat-icon[@fonticon='mic']"));
+		highlight(ele30, d);
 	}
 }
