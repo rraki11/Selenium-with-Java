@@ -40,6 +40,10 @@ public class _22_XPath {
 		XPath_with_Index(driver);
 		Thread.sleep(100 + new Random().nextInt(150));
 		XPath_Functions(driver);
+		Thread.sleep(100 + new Random().nextInt(150));
+		XPath_Axes(driver);
+		Thread.sleep(100 + new Random().nextInt(150));
+		
 		
 		Thread.sleep(3000);
 		driver.quit();
@@ -188,5 +192,39 @@ public class _22_XPath {
 		System.out.println("number of elements less than 1st row: " + ele7.size());
 	}
 //-----------------------------------------------------------------------------------------------------
-	
+	public static void  XPath_Axes (WebDriver d) {
+		d.get("https://www.hyrtutorials.com/p/add-padding-to-containers.html");
+		
+		// following-sibling;		
+		//1st unique element -> next normal element
+		WebElement ele1 = d.findElement(By.xpath("//label[text()='Email']/following-sibling::input[@type='text']"));
+		highlight(ele1, d);
+		
+		// preceding-sibling;		
+		// next normal element -> 1st unique element
+		WebElement ele2 = d.findElement(By.xpath("//td[text()='Maria Anders']/preceding-sibling::td/child::input[@type='checkbox']"));
+		ele2.click();
+		
+		// child 
+		List<WebElement> ele3 = d.findElements(By.xpath("//table[@id='contactList']/child::tbody/child::tr"));
+		System.out.println("number of child elements under parent element(contactList): " + ele3.size());
+		
+		// parent
+		// we dont needt to use indexes to find parent element cause parent element for a element
+		// will be only one
+		WebElement ele4 = d.findElement(By.xpath("//td[text()='Giovanni Rovelli']/parent::tr"));
+		highlight(ele4, d);
+		
+		// ancestor
+		// grandparents of an element
+		List<WebElement> ele5 = d.findElements(By.xpath("//table[@id='contactList']/ancestor::*"));
+		System.out.println("number of grandparents for table element: " + ele5.size()); // result = 14
+		// "//table[@id='contactList']/ancestor::<tagname>" will only give you specific grandparent
+		
+		// ancestor-or-self
+		// grandparents of an element and also includes the self parent element
+		List<WebElement> ele6 = d.findElements(By.xpath("//table[@id='contactList']/ancestor-or-self::*"));
+		System.out.println("number of grandparents for table element: " + ele6.size()); // result = 15
+		
+	}
 }
