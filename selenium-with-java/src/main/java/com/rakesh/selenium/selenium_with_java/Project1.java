@@ -1,6 +1,5 @@
 package com.rakesh.selenium.selenium_with_java;
 
-import java.nio.Buffer;
 import java.util.Arrays;
 import java.util.Random;
 import org.openqa.selenium.By;

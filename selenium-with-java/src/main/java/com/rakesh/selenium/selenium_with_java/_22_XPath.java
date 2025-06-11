@@ -43,6 +43,7 @@ public class _22_XPath {
 		Thread.sleep(100 + new Random().nextInt(150));
 		XPath_Axes(driver);
 		Thread.sleep(100 + new Random().nextInt(150));
+		XPath_Shortcuts(driver);
 		
 		
 		Thread.sleep(3000);
@@ -222,9 +223,52 @@ public class _22_XPath {
 		// "//table[@id='contactList']/ancestor::<tagname>" will only give you specific grandparent
 		
 		// ancestor-or-self
-		// grandparents of an element and also includes the self parent element
+		// grandparents of an element and also includes the self i.e, parent element
 		List<WebElement> ele6 = d.findElements(By.xpath("//table[@id='contactList']/ancestor-or-self::*"));
 		System.out.println("number of grandparents for table element: " + ele6.size()); // result = 15
 		
+		// descendant
+		// all the child or following elements of a parent element
+		List<WebElement> ele7 = d.findElements(By.xpath("//table[@id='contactList']/descendant::*"));
+		System.out.println("number of child or descendant elements for parent element: " + ele7.size());	//result = 55
+		// d.findElements(By.xpath("//table[@id='contactList']/descendant::tr"));
+		// above line will find the number of specific following i.e,"tr" elements of the parent 		// element
+		
+		// descendant-or-self
+		// all the child or following element of a parent element including itself
+		List<WebElement> ele8 = d.findElements(By.xpath("//table[@id='contactList']/descendant-or-self::*"));		//result = 56
+		System.out.println("number of child or descendant elements for parent element: " + ele8.size());
+		
+		// following
+		// all the following/after elements of a parent element
+		List<WebElement> ele9 = d.findElements(By.xpath("//table[@id='contactList']/descendant-or-self::*"));
+		System.out.println("the number of followin/after elements of a parent element: " + ele9.size());
+		
+		// preceding
+		// all the before elements of a parent element
+		WebElement ele10 = d.findElement(By.xpath("//label[text()='Password']/preceding::input[1]"));
+		highlight(ele10, d);
+	}
+//-----------------------------------------------------------------------------------------------------	
+	public static void XPath_Shortcuts (WebDriver d) {
+		d.get("https://www.hyrtutorials.com/p/add-padding-to-containers.html");
+
+		// text() -> .
+		highlight(d.findElement(By.xpath("//h1[.='Register']")),d);
+		highlight(d.findElement(By.xpath("//a[contains(.,'account')]")),d);
+		highlight(d.findElement(By.xpath("//td[starts-with(.,'Maria')]")),d);
+		highlight(d.findElement(By.xpath("//label[normalize-space(.)='First Name']")),d);
+
+		// child -> /
+		highlight(d.findElement(By.xpath("//div[@class='container']/h1")),d);
+
+		//parent - > /..
+		highlight(d.findElement(By.xpath("//h1[.='Register']/..")),d);
+
+		//descendant -> //
+		List<WebElement> elements = d.findElements(By.xpath("//table[@id='contactList']//td"));
+		for (WebElement element : elements) {
+			highlight(element,d);
+		}
 	}
 }
