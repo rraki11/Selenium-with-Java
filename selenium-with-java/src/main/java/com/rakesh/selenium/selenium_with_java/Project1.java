@@ -81,7 +81,11 @@ public class Project1 {
 			Thread.sleep(2000);
 		Thread.sleep(100 + new Random().nextInt(150));
 		driver.get("https://gemini.google.com/app");
-		element2627282930(driver);
+			element2627282930(driver);
+			Thread.sleep(2000);
+		Thread.sleep(100 + new Random().nextInt(150));
+		driver.get("https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsignup%3Fref_cta%3DSign%2Bup%26ref_loc%3Dheader%2Blogged%2Bout%26ref_page%3D%252F%26source%3Dheader-home");
+			github(driver);
 			
 		Thread.sleep(3000);
 		driver.quit();
@@ -221,5 +225,70 @@ public class Project1 {
 		highlight(ele29, d);
 		WebElement ele30 = d.findElement(By.xpath("//mat-icon[@fonticon='mic']"));
 		highlight(ele30, d);
+	}
+//---------------------------------------------------------------------------------------------------//
+	
+	public static void github (WebDriver d) throws InterruptedException {
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("//a[contains(@href, 'https://github.com/')]")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("(//h1)[1]")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("//label[@for='login_field']")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("//input[@name='login' or @id='login_field']")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("//label[@for='password']")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("/html/body/div[1]/div[3]/main/div/div[4]/form/div/input[1]")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("//*[@id=\"login\"]/div[4]")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("(//span[text()])[10]")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("//p[@class='mt-1 mb-0 p-0']")), d);
+		Thread.sleep(2000);
+		
+		d.navigate().refresh();
+		
+		d.findElement(By.xpath("//a[.='Create an account']")).click();
+		
+		highlight(d.findElement(By.xpath("/html/body/div[1]/div[1]/header/div/div/span")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("/html/body/div[1]/div[1]/header/div/div/a")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.className("signup-form-fields__h2")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("(//label[@class='text-semibold'])[1]")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("(//label[@class='text-semibold'])[2]")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("(//label[@class='text-semibold'])[3]")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("(//div[@class='mb-3 mt-1'])[1]/child::*")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("(//div[@class='mb-3 mt-1'])[2]/child::*")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("(//div[@class='mb-3 mt-1'])[3]/child::*")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("(//label)[4]")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("//span[starts-with(@class,'Button-content Button-content--alignStart')]")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("//legend[@class='text-semibold']")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("//input[@type='checkbox']")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("//label[@class='text-normal FormControl-label']")), d);
+		Thread.sleep(2000);
+		highlight(d.findElement(By.xpath("(//span[@class='Button-content'])[1]")), d);
+		Thread.sleep(2000);
+		
+		d.navigate().back();
+		
+		d.findElement(By.xpath("//input[@name='login' or @id='login_field']")).sendKeys("edits000.11@gmail.com");
+		Thread.sleep(2000);
+		d.findElement(By.xpath("/html/body/div[1]/div[3]/main/div/div[4]/form/div/input[1]")).sendKeys("github6302328162@");
+		d.findElement(By.xpath("/html/body/div[1]/div[3]/main/div/div[4]/form/div/input[13]")).click();
 	}
 }

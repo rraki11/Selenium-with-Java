@@ -25,8 +25,6 @@ public class _23_Mouse_actions {
 		
 		driver.get("https://www.amazon.com/ref=nav_logo");
 		
-		
-		
 		Actions actions = new Actions(driver);
 		
 		// mouse hover = moveToElement()
@@ -34,16 +32,10 @@ public class _23_Mouse_actions {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[.='Change' and @class='icp-flyout-change']")).click();
 		Thread.sleep(2000);
-//		Select currency = new Select(driver.findElement(By.xpath("//span[starts-with(@class,'a-button-text a-declarative')]")));
-//		currency.selectByContainsVisibleText("Indian Rupee");
-//		driver.findElement(By.xpath("//span[starts-with(@class,'a-button-text a-declarative')]")).click();
-		Thread.sleep(2000);
-//		driver.findElement(By.xpath("(//span[@style='unicode-bidi:isolate; direction:ltr;'])[102]")).click();
-//		Thread.sleep(1500);
+
 		driver.findElement(By.xpath("(//input[@class='a-button-input'])")).click();
 		Thread.sleep(1500);
-//		driver.findElement(By.xpath("(//input[@class='a-button-input'])[1]")).click();
-//		Thread.sleep(2000);
+
 		driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("alexa");
 		driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).submit();
 		
