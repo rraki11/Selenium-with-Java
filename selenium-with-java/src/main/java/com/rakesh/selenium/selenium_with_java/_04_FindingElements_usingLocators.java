@@ -33,7 +33,7 @@ public class _04_FindingElements_usingLocators {
         highlight(driver, driver.findElement(By.linkText("Selenium143")));
         Thread.sleep(3000);
 
-        // Locate a link using partial link text, instead of "seleniumTutorial" we only typed "SeleniumTuto" 		which is called as the partial text of the original text.. (Only works for <a> tags)
+        // Locate a link using partial link text, instead of "seleniumTutorial" we only typed"SeleniumTuto" 		which is called as the partial text of the original text.. (Only works for <a> tags)
         highlight(driver, driver.findElement(By.partialLinkText("SeleniumTuto")));
         Thread.sleep(3000);
 
