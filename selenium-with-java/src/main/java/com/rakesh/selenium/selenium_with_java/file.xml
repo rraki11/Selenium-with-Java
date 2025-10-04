@@ -1,0 +1,15 @@
+<details>
+
+    <roll num="001">
+        <stu1>rakesh</stu1>
+        <stu1_sur>routray</stu1_sur>
+        <stu1_phone_num>1234567890</stu1_phone_num>
+    </roll>
+    
+    <roll num="002">
+        <stu1>shubh</stu1>
+        <stu1_sur>kumar</stu1_sur>
+        <stu1_phone_num>9876543210</stu1_phone_num>
+    </roll>
+    
+</details>
