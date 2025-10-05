@@ -49,17 +49,23 @@ public class ExcelUtil {
 		sheet = wb.getSheet(sheetname);
 		ro = sheet.getRow(rownum);
 		ce = ro.getCell(cellnum);
-		String data;
-		try {
-			DataFormatter formatter = new DataFormatter();
-			String cellData = formatter.formatCellValue(ce);
-			return cellData;
-		} catch (Exception e) {
-			data = "";
-		}
-		wb.close();
-		fi.close();
-		return data;
+		String data = "";
+	    try {
+	        XSSFRow row = sheet.getRow(rownum);
+	        if (row != null) {
+	            XSSFCell cell = row.getCell(cellnum);
+	            if (cell != null) {
+	                DataFormatter formatter = new DataFormatter();
+	                data = formatter.formatCellValue(cell);
+	            }
+	        }
+	    } catch (Exception e) {
+	        data = "";
+	    }
+
+	    wb.close();
+	    fi.close();
+	    return data;
 	}
 	
 	//writies data into a cell
