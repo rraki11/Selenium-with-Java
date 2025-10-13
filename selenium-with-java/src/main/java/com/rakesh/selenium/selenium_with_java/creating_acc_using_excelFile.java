@@ -83,7 +83,7 @@ public class creating_acc_using_excelFile {
 			Thread.sleep(3000);
 			Pass.click();
 			Pass.sendKeys(pass);
-			Thread.sleep(3000);
+			Thread.sleep(3000);	
 			dropdownSelect.selectByVisibleText(state);
 
 			
