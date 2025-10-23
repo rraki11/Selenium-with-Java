@@ -1,41 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-13T06:24:01 IST" name="Default suite" finished-at="2025-10-13T06:24:34 IST" duration-ms="33327">
+  <suite started-at="2025-10-23T17:35:20 IST" name="Default suite" finished-at="2025-10-23T17:35:20 IST" duration-ms="90">
     <groups>
     </groups>
-    <test started-at="2025-10-13T06:24:01 IST" name="Default test" finished-at="2025-10-13T06:24:34 IST" duration-ms="33327">
-      <class name="com.rakesh.selenium.selenium_with_java.FinalProject">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.rakesh.selenium.selenium_with_java.FinalProject@7770f470]" started-at="2025-10-13T06:24:01 IST" name="setup" finished-at="2025-10-13T06:24:16 IST" duration-ms="15534" status="PASS">
+    <test started-at="2025-10-23T17:35:20 IST" name="Default test" finished-at="2025-10-23T17:35:20 IST" duration-ms="90">
+      <class name="com.rakesh.selenium.selenium_with_java.Soft_Assertion_5">
+        <test-method signature="soft_assertion()[pri:0, instance:com.rakesh.selenium.selenium_with_java.Soft_Assertion_5@3b69e7d1]" started-at="2025-10-23T17:35:20 IST" name="soft_assertion" finished-at="2025-10-23T17:35:20 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="openWebsite()[pri:1, instance:com.rakesh.selenium.selenium_with_java.FinalProject@7770f470]" started-at="2025-10-13T06:24:16 IST" name="openWebsite" finished-at="2025-10-13T06:24:27 IST" duration-ms="10269" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openWebsite -->
-        <test-method signature="textBoxAndAlertTest()[pri:2, instance:com.rakesh.selenium.selenium_with_java.FinalProject@7770f470]" started-at="2025-10-13T06:24:27 IST" name="textBoxAndAlertTest" finished-at="2025-10-13T06:24:29 IST" duration-ms="2445" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- textBoxAndAlertTest -->
-        <test-method signature="radioAndCheckboxTest()[pri:3, instance:com.rakesh.selenium.selenium_with_java.FinalProject@7770f470]" started-at="2025-10-13T06:24:29 IST" name="radioAndCheckboxTest" finished-at="2025-10-13T06:24:31 IST" duration-ms="2215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radioAndCheckboxTest -->
-        <test-method signature="dropdownTest()[pri:4, instance:com.rakesh.selenium.selenium_with_java.FinalProject@7770f470]" started-at="2025-10-13T06:24:31 IST" name="dropdownTest" finished-at="2025-10-13T06:24:33 IST" duration-ms="1165" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dropdownTest -->
-        <test-method signature="multiSelectAndExtractText()[pri:5, instance:com.rakesh.selenium.selenium_with_java.FinalProject@7770f470]" started-at="2025-10-13T06:24:33 IST" name="multiSelectAndExtractText" finished-at="2025-10-13T06:24:34 IST" duration-ms="1226" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- multiSelectAndExtractText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rakesh.selenium.selenium_with_java.FinalProject@7770f470]" started-at="2025-10-13T06:24:34 IST" name="tearDown" finished-at="2025-10-13T06:24:34 IST" duration-ms="271" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.rakesh.selenium.selenium_with_java.FinalProject -->
+        </test-method> <!-- soft_assertion -->
+      </class> <!-- com.rakesh.selenium.selenium_with_java.Soft_Assertion_5 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
